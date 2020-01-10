@@ -34,7 +34,7 @@ pipeline {
     }
     stage('Docker Purge') {
       steps {
-        sh ‘docker image prune -fa’
+        sh "docker image prune -fa"
         deleteDir()
       }
      }
