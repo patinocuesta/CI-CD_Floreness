@@ -1,3 +1,3 @@
 FROM nginx
-ADD /home/ubuntu/docker/jenkins_pipe_docker/ /usr/share/nginx/html/
+ADD jenkins_pipe_docker/ /usr/share/nginx/html/
 EXPOSE 5000/TCP
