@@ -1,3 +1,3 @@
 FROM nginx:alpine
-WORKDIR /home/ubuntu/docker/
-COPY jenkins_pipe_docker/ /usr/share/nginx/html/
+WORKDIR /home/ubuntu/docker/jenkins_pipe_docker/
+COPY /usr/share/nginx/html/
