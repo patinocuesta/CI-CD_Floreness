@@ -1,4 +1,3 @@
-FROM nginx:alpine
-WORKDIR /home/ubuntu/docker/jenkins_pipe_docker
-COPY ./ /usr/share/nginx/html/
-EXPOSE 5000
+FROM nginx
+ADD ./ /usr/share/nginx/html/
+EXPOSE 5000/TCP
