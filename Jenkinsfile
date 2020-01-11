@@ -30,12 +30,14 @@ pipeline {
     stage('Remove Unused docker image') {
       steps{
         sh "docker rmi $registry"
+        sh "docker image prune -fa"
+        deleteDir()
       }
     }
     stage('Docker Purge') {
       steps {
-        sh "docker image prune -fa"
-        deleteDir()
+        sh 'docker stop $(docker ps -a -q)'
+        sh 'docker rm $(docker ps -a -q)'
       }
      }
      stage('Running test') {
