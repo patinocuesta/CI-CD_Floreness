@@ -38,5 +38,10 @@ pipeline {
         deleteDir()
       }
      }
+     stage('Test') {
+      steps {
+        sh 'docker run -d -p 8090:80 patinodonato/nginx-flore'
+      }
+    }
   }
 }
