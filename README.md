@@ -1,2 +1,2 @@
 # CI-CD_Floreness
-CI-CD with Docker, Jenkins and Git following
+CI-CD with Docker, Jenkins and Git.
